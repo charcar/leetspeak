@@ -2,6 +2,10 @@ import java.io.Console;
 
 public class App {
   public static void main(String[] args) {
+    Console myConsole = System.console();
+    System.out.println("Enter a String you wish to turn into leetspeak.");
+    String userString = myConsole.readLine();
+    System.out.println(leetspeak(userString));
 
   }
 public static String leetspeak(String normalInput) {
